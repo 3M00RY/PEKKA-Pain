@@ -1,0 +1,130 @@
+/* Start Global Variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --transition-duration: 0.3s;
+}
+/* End Global Variables */
+
+/* Start Global Rules */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+img {
+  vertical-align: middle;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'OpenSans';
+  background-color: #f1f5f9;
+  /* min-height: 1000vh; */
+}
+@media (max-width: 767px) {
+  .images-container {
+    width: 100%;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .images-container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .images-container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .images-container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+h2.page-title {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px 15px;
+  font-size: 2.5rem;
+  background-color: #f1f5f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  h1.page-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
+.images-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.image-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition-duration);
+}
+.image-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.image-card .links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.image-card a button {
+  height: 30px;
+  color: #fff;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-duration);
+}
+.image-card a.open button {
+  width: 60px;
+  background-color: var(--orange-color);
+}
+.image-card a.download button {
+  width: 90px;
+  background-color: var(--green-color);
+}
+
+
+
+
+
+
+
+
+
+
